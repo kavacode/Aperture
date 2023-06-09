@@ -132,3 +132,28 @@ header nav ul li:last-of-type a {
     border-radius: 50%;
     margin-right: 5px;
 }
+
+
+.sunset {
+    background-image: url("../images/sunset.jpg");
+    background-size: cover;
+    min-height: 600px;
+    /*background-position: center center;*/
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.sunset article{
+    max-width: 300px;
+
+}
+.sunset article h4{
+    font: 14px/20px 'poppinsregular';
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.sunset article p{
+    font: 14px/20px 'poppinsregular';
+    color: #C0C0C0;
+}
