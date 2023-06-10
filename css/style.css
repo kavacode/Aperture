@@ -130,7 +130,7 @@ header nav ul li:last-of-type a {
     height: 32px;
     background-color: #000;
     border-radius: 50%;
-    margin-right: 5px;
+    margin-right: 6px;
 }
 
 
@@ -142,6 +142,13 @@ header nav ul li:last-of-type a {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding-right: 60px;
+}
+.monstera{
+    background-image: url("../images/monstera.jpg");
+}
+.himalayas{
+    background-image: url("../images/himalayas.jpg");
 }
 .sunset article{
     max-width: 300px;
@@ -156,4 +163,38 @@ header nav ul li:last-of-type a {
 .sunset article p{
     font: 14px/20px 'poppinsregular';
     color: #C0C0C0;
+}
+.clients{
+    padding: 113px 0 140px;
+    background-color: black;
+}
+.clients .container{
+    max-width: 1168px;
+    margin: auto;
+}
+.clients h2{
+    font: 40px/42px 'poppinsregular';
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+.clients h3{
+    font: 24px/30px 'poppinsregular';
+    text-align: center;
+    color: #C0C0C0;
+    margin-bottom: 82px;
+}
+.clients .flex_block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.clients .flex_block a{
+    display: inline-block;
+    margin: 0 10px;
+    max-width: 128px;
+}
+.clients .flex_block a img{
+    display: block;
+    width: 100%;
 }
