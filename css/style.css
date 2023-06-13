@@ -198,3 +198,100 @@ header nav ul li:last-of-type a {
     display: block;
     width: 100%;
 }
+
+
+
+footer{
+    padding: 108px 0 92px;
+    background-color: black;
+
+}
+.footer_container{
+    max-width: 1168px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid white;
+    padding-bottom: 36px;
+}
+.footer_pages{
+    display: flex;
+}
+footer .footer_container ul{
+    margin-right: 55px;
+
+    list-style: none;
+}
+footer .footer_container .footer_pages p{
+    font: 14px/20px 'poppinsregular';
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #C0C0C0;
+
+}
+footer .footer_container .footer_pages a{
+    font: 13px/20px 'poppinsregular';
+    color: #FFFFFF;
+    text-decoration: none;
+}
+footer .footer_container .footer_pages ul li{
+    margin-top: 10px;
+}
+footer .footer_container p{
+    font: 13px/20px 'poppinsregular';
+    color: #C0C0C0;
+}
+.footer_subscribe{
+    max-width: 1168px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid white;
+    padding: 36px 0;
+}
+footer .footer_subscribe h5{
+    font: 14px/20px 'poppinsregular';
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+footer .footer_subscribe p{
+    font: 13px/20px 'poppinsregular';
+    color: #C0C0C0;
+}
+footer .footer_subscribe form{
+    background-color: #F9FAFB;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    box-sizing: border-box;
+    display: flex;
+}
+footer .footer_subscribe input{
+    border-radius: 12px;
+    border: none;
+    width: 458px;
+    height: 52px;
+}
+footer .footer_subscribe button{
+    background: #000000;
+    border-radius: 11px;
+    width: 63px;
+    height: 30px;
+    margin: 11px 6px 11px 0;
+}
+.footer_social {
+    max-width: 1168px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 56px;
+}
+footer .footer_social p{
+    font: 14px/20px 'poppinsregular';
+    color: #C0C0C0;
+}
+footer .footer_social a{
+    margin-left: 20px;
+    text-decoration: none;
+}
