@@ -214,6 +214,9 @@ footer{
     border-bottom: 2px solid white;
     padding-bottom: 36px;
 }
+footer .footer_container .footer_logo a{
+    margin-bottom: 20px;
+}
 .footer_pages{
     display: flex;
 }
