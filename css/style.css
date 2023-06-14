@@ -214,8 +214,16 @@ footer{
     border-bottom: 2px solid white;
     padding-bottom: 36px;
 }
-footer .footer_container .footer_logo a{
-    margin-bottom: 20px;
+/*footer .footer_container .footer_logo a{*/
+/*    margin-bottom: 20px;*/
+/*} не работает*/
+
+/*footer .footer_container .footer_logo img{*/
+/*    margin-bottom: 20px;*/
+/*} расширяет область самой ссылки*/
+
+footer .footer_container .footer_logo p{
+    margin-top: 20px;
 }
 .footer_pages{
     display: flex;
@@ -238,7 +246,7 @@ footer .footer_container .footer_pages a{
     text-decoration: none;
 }
 footer .footer_container .footer_pages ul li{
-    margin-top: 10px;
+    margin-bottom: 10px;
 }
 footer .footer_container p{
     font: 13px/20px 'poppinsregular';
