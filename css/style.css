@@ -64,6 +64,7 @@ header nav ul li:last-of-type a {
     background-size: cover;
     height: calc(100vh - 83px);
     box-sizing: border-box;
+    position: relative;
 }
 .main_screen article{
     max-width: 580px;
@@ -87,6 +88,94 @@ header nav ul li:last-of-type a {
     text-align: center;
     color: #C0C0C0;
 }
+
+
+.gallery{
+    background-color: #000000;
+    padding: 120px 0 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.gallery_text{
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+.gallery .gallery_text h3{
+    font: 40px/42px 'poppinsregular';
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+
+}
+.gallery .gallery_text p{
+    font: 23px/30px 'poppinsregular';
+    text-align: center;
+    color: #C0C0C0;
+
+}
+.img_block{
+    max-width: 1168px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.gallery .img_block h5{
+    font: 14px/20px 'poppinsregular';
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+.gallery .img_block p{
+    font: 14px/20px 'poppinsregular';
+    color: #C0C0C0;
+    margin-bottom: 17px;
+
+}
+.button{
+    font: 15px/20px 'poppinsregular';
+    letter-spacing: 0.4px;
+    color: #000000;
+    /*padding: 9px 10px 13px 4px;*/
+    background: #FFFFFF;
+    border-radius: 14px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    height: 42px;
+    width: 143px;
+}
+.button:before{
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-color: #000;
+    border-radius: 50%;
+    margin-right: 6px;
+    margin-left: 4px;
+}
+.gallery .img_block article{
+    max-width: 576px;
+    margin-bottom: 16px;
+    position: relative;
+}
+.gallery .img_block img{
+    display: block;
+    width: 100%;
+}
+.gallery .img_block article div{
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    text-align: left;
+}
+
+
+
+
 
 
 .help_screen {
@@ -143,6 +232,7 @@ header nav ul li:last-of-type a {
     justify-content: flex-end;
     align-items: center;
     padding-right: 60px;
+    position: relative;
 }
 .monstera{
     background-image: url("../images/monstera.jpg");
@@ -313,4 +403,39 @@ footer .footer_social p{
 footer .footer_social a{
     margin-left: 20px;
     text-decoration: none;
+}
+
+
+.bottom_icons{
+    display: flex;
+    list-style: none;
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+}
+.bottom_icons li{
+    font: 12px/12px 'poppinsregular';
+    color: #FFFFFF;
+    margin-left: 16px;
+}
+.bottom_icons li:before{
+    content: "";
+    display: inline-block;
+    background-image: url("../images/icon1.svg");
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    position: relative;
+    bottom: -5px;
+}
+.bottom_icons li:nth-of-type(2):before{
+    background-image: url("../images/icon2.svg");
+}
+.bottom_icons li:nth-of-type(3):before{
+    background-image: url("../images/icon3.svg");
+    width: 32px;
+}
+.bottom_icons li:last-of-type:before{
+    background-image: url("../images/icon4.svg");
+    width: 10px;
 }
