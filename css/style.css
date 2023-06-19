@@ -9,6 +9,7 @@
     font-weight: normal;
     font-style: normal;
 
+/*================ HEADER ================*/
 }
 header {
     background-color: #000000;
@@ -54,6 +55,7 @@ header nav ul li:last-of-type a {
     padding: 11px 20px;
 }
 
+/*================ MAIN ================*/
 
 .main_screen{
     display: flex;
@@ -89,38 +91,41 @@ header nav ul li:last-of-type a {
     color: #C0C0C0;
 }
 
+/*================ GALLERY ================*/
 
 .gallery{
     background-color: #000000;
     padding: 120px 0 100px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: space-between;*/
+    /*align-items: center;*/
 }
-.gallery_text{
-    max-width: 600px;
-    margin-bottom: 40px;
+.gallery_container{
+    margin: auto;
+    max-width: 1168px;
 }
-.gallery .gallery_text h3{
+/*.gallery_text{*/
+/*    max-width: 600px;*/
+/*}*/
+.gallery .gallery_container h2{
     font: 40px/42px 'poppinsregular';
     text-align: center;
     color: #FFFFFF;
     margin-bottom: 15px;
-
 }
-.gallery .gallery_text p{
+.gallery .gallery_container h3{
     font: 23px/30px 'poppinsregular';
     text-align: center;
     color: #C0C0C0;
-
+    margin-bottom: 42px;
 }
 .img_block{
     max-width: 1168px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    row-gap: 16px;
 }
 .gallery .img_block h5{
     font: 14px/20px 'poppinsregular';
@@ -159,7 +164,7 @@ header nav ul li:last-of-type a {
 }
 .gallery .img_block article{
     max-width: 576px;
-    margin-bottom: 16px;
+    /*margin-bottom: 16px;*/
     position: relative;
 }
 .gallery .img_block img{
@@ -172,56 +177,20 @@ header nav ul li:last-of-type a {
     bottom: 30px;
     text-align: left;
 }
-
-
-
-
-
-
-.help_screen {
-    background-color: #000000;
-    padding: 113px 0 108px 0;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+@media (max-width: 1200px) {
+    .img_block {
+        padding: 0 5px;
+    }
 }
-.help_screen div {
-    max-width: 571px;
-    text-align: center;
+@media (max-width: 1160px) {
+    .img_block {
+        justify-content: center;
+    }
+    .gallery {
+        padding: 90px 0 70px 0;
+    }
 }
-.help_screen div h2{
-    font: 40px/42px 'poppinsregular';
-    /*text-align: center;*/
-    color: #FFFFFF;
-    margin-bottom: 15px;
-}
-.help_screen div h3{
-    font: 24px/30px 'poppinsregular';
-    /*text-align: center;*/
-    color: #C0C0C0;
-    margin-bottom: 22px;
-}
-.help_screen div a {
-    font: 16px/20px 'poppinsregular';
-    /*text-align: center;*/
-    /*letter-spacing: 0.4px;*/
-    color: #000000;
-    background-color: #FFFFFF;
-    border-radius: 14px;
-    text-decoration: none;
-    padding: 5px 10px 5px 5px;
-    display: inline-flex;
-    align-items: center;
-}
-.help_screen div a:before {
-    content: "";
-    width: 32px;
-    height: 32px;
-    background-color: #000;
-    border-radius: 50%;
-    margin-right: 6px;
-}
-
+/*================ SUNSET (monstera&himalayas) ================*/
 
 .sunset {
     background-image: url("../images/sunset.jpg");
@@ -289,8 +258,53 @@ header nav ul li:last-of-type a {
     width: 100%;
 }
 
+/*================ HELP SCREEN ================*/
 
+.help_screen {
+    background-color: #000000;
+    padding: 113px 0 108px 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.help_screen div {
+    max-width: 571px;
+    text-align: center;
+}
+.help_screen div h2{
+    font: 40px/42px 'poppinsregular';
+    /*text-align: center;*/
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+.help_screen div h3{
+    font: 24px/30px 'poppinsregular';
+    /*text-align: center;*/
+    color: #C0C0C0;
+    margin-bottom: 22px;
+}
+.help_screen div a {
+    font: 16px/20px 'poppinsregular';
+    /*text-align: center;*/
+    /*letter-spacing: 0.4px;*/
+    color: #000000;
+    background-color: #FFFFFF;
+    border-radius: 14px;
+    text-decoration: none;
+    padding: 5px 10px 5px 5px;
+    display: inline-flex;
+    align-items: center;
+}
+.help_screen div a:before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-color: #000;
+    border-radius: 50%;
+    margin-right: 6px;
+}
 
+/*================ FOOTER ================*/
 
 footer{
     padding: 108px 0 92px;
@@ -438,4 +452,9 @@ footer .footer_social a{
 .bottom_icons li:last-of-type:before{
     background-image: url("../images/icon4.svg");
     width: 10px;
+}
+@media (max-width: 1200px) {
+    footer {
+        padding: 88px 16px 62px;
+    }
 }
