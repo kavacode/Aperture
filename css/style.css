@@ -121,7 +121,7 @@ header nav ul li:last-of-type a {
     margin-bottom: 42px;
 }
 .img_block{
-    max-width: 1168px;
+    /*max-width: 1168px;*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
