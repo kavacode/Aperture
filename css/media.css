@@ -35,30 +35,38 @@
 }
 @media (max-width: 781px){
     header nav a{
-        font: 10px/20px 'poppinsregular';
+        font: 12px/20px 'poppinsregular';
         color: #FFFFFF;
         text-decoration: none;
     }
     header nav ul li:first-of-type a {
-        font-size: 9px;
+        font-size: 11px;
     }
     header nav ul li:last-of-type a {
-        font: 12px/20px 'poppinsregular';
+        font: 13px/20px 'poppinsregular';
         padding: 5px 10px;
     }
 }
-@media (max-width: 616px){
+@media (max-width: 673px){
+    header {
+        background-color: #000000;
+        padding: 16px 0;
+    }
     .container a{
         width: 20px;
         flex: 0 0 20px;
         overflow: hidden;
     }
 }
-@media (max-width: 508px) {
+@media (max-width: 565px) {
     header nav ul {
         flex-wrap: wrap;
         justify-content: right;
     }
+    header nav ul li {
+        margin-bottom: 5px;
+    }
+
 }
 
     /*================ MAIN ================*/
@@ -163,136 +171,170 @@
         }
     /*================ CLIENTS SECTION ================*/
     @media (max-width: 616px) {
-        .flex_block{
+        .flex_block {
+            display: flex;
             flex-wrap: wrap;
-        }
-    }
-@media (max-width: 428px){
-    .clients{
-        padding: 50px 0 50px;
-    }
-    .clients h2{
-        font: 30px/42px 'poppinsregular';
-        margin-bottom: 10px;
-    }
-    .clients h3{
-        font: 18px/30px 'poppinsregular';
-        margin-bottom: 50px;
-    }
-}
-    /*================ HELP SCREEN ================*/
-    @media (max-width: 428px) {
-        .help_screen {
-            padding: 50px 0 50px 0;
-        }
-        .help_screen div h2{
-            font: 32px/42px 'poppinsregular';
-            margin-bottom: 11px;
-        }
-        .help_screen div h3{
-            font: 18px/30px 'poppinsregular';
-            margin-bottom: 18px;
-        }
-        .help_screen div a {
-            font: 14px/20px 'poppinsregular';
-            padding: 4px 8px 4px 4px;
-            display: inline-flex;
+            justify-content: space-between;
             align-items: center;
         }
-        .help_screen div a:before {
-            width: 24px;
-            height: 24px;
-            margin-right: 4px;
+
+        .clients .flex_block a {
+            display: inline-block;
+            margin: 0 10px;
+            max-width: 128px;
+            flex-basis: calc(50% - 20px);
+            margin-bottom: 15px;
+            padding: 0 10px;
         }
     }
 
-    /*================ FOOTER ================*/
+        @media (max-width: 428px) {
+            .clients {
+                padding: 50px 0 50px;
+            }
 
-    @media (max-width: 1200px) {
-        footer {
-            padding: 88px 16px 62px;
+            .clients h2 {
+                font: 30px/42px 'poppinsregular';
+                margin-bottom: 10px;
+            }
+
+            .clients h3 {
+                font: 18px/30px 'poppinsregular';
+                margin-bottom: 50px;
+            }
         }
-    }
-    @media (max-width: 874px){
-        footer .footer_container .footer_logo p{
-            margin-right: 10px;
+        /*================ HELP SCREEN ================*/
+        @media (max-width: 428px) {
+            .help_screen {
+                padding: 50px 0 50px 0;
+            }
+
+            .help_screen div h2 {
+                font: 32px/42px 'poppinsregular';
+                margin-bottom: 11px;
+            }
+
+            .help_screen div h3 {
+                font: 18px/30px 'poppinsregular';
+                margin-bottom: 18px;
+            }
+
+            .help_screen div a {
+                font: 14px/20px 'poppinsregular';
+                padding: 4px 8px 4px 4px;
+                display: inline-flex;
+                align-items: center;
+            }
+
+            .help_screen div a:before {
+                width: 24px;
+                height: 24px;
+                margin-right: 4px;
+            }
         }
-        .footer_logo{
-            margin-right: 20px;
+
+        /*================ FOOTER ================*/
+        @media (max-width: 1200px) {
+            footer {
+                padding: 88px 16px 62px;
+            }
         }
-    }
-    @media (max-width: 718px){
-        footer .footer_subscribe form{
-            width: 270px;
-            height: 42px;
+        @media (max-width: 874px) {
+            footer .footer_container .footer_logo p {
+                margin-right: 10px;
+            }
+
+            .footer_logo {
+                margin-right: 20px;
+            }
         }
-        footer .footer_subscribe input{
-            border-radius: 12px;
-            background-color: #F9FAFB;
-            border: none;
-            width: 260px;
-            height: 38px;
-            font: 12px/20px 'poppinsregular';
+        @media (max-width: 718px) {
+            footer .footer_subscribe form {
+                width: 270px;
+                height: 42px;
+            }
+
+            footer .footer_subscribe input {
+                border-radius: 12px;
+                background-color: #F9FAFB;
+                border: none;
+                width: 260px;
+                height: 38px;
+                font: 12px/20px 'poppinsregular';
+            }
+
+            footer .footer_subscribe input:focus {
+                outline: none;
+            }
+
+            footer .footer_subscribe button {
+                background: #000000;
+                border-radius: 11px;
+                border: none;
+                width: 45px;
+                height: 25px;
+                margin: auto;
+            }
         }
-        footer .footer_subscribe input:focus{
-            outline: none;
+        @media (max-width: 428px) {
+            footer {
+                padding: 50px 10px;
+            }
+
+            .footer_container {
+                padding-bottom: 20px;
+            }
+
+            footer .footer_container ul {
+                margin-right: 35px;
+            }
+
+            footer .footer_container .footer_pages ul li:first-of-type {
+                font: 12px/20px 'poppinsregular';
+                letter-spacing: 1px;
+            }
+
+            footer .footer_container .footer_pages a {
+                font: 11px/20px 'poppinsregular';
+            }
+
+            footer .footer_container .footer_pages ul li {
+                margin-bottom: 7px;
+            }
+
+            footer .footer_container p {
+                font: 11px/20px 'poppinsregular';
+            }
+
+            .footer_subscribe {
+                flex-wrap: wrap;
+                justify-content: center;
+                padding: 26px 0;
+            }
+
+            footer .footer_subscribe h5 {
+                font: 13px/20px 'poppinsregular';
+                letter-spacing: 1px;
+                margin-bottom: 10px;
+            }
+
+            footer .footer_subscribe p {
+                font: 11px/20px 'poppinsregular';
+                margin-bottom: 10px;
+            }
+
+            .footer_social {
+                padding-top: 26px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            footer .footer_social p {
+                font: 12px/20px 'poppinsregular';
+                margin-bottom: 10px;
+            }
+
+            footer .footer_social a {
+                margin-left: 10px;
+            }
         }
-        footer .footer_subscribe button{
-            background: #000000;
-            border-radius: 11px;
-            border: none;
-            width: 45px;
-            height: 25px;
-            margin: auto;
-        }
-    }
-@media (max-width: 428px){
-    footer{
-        padding: 50px 10px;
-    }
-    .footer_container {
-        padding-bottom: 20px;
-    }
-    footer .footer_container ul{
-        margin-right: 35px;
-    }
-    footer .footer_container .footer_pages ul li:first-of-type{
-        font: 12px/20px 'poppinsregular';
-        letter-spacing: 1px;
-    }
-    footer .footer_container .footer_pages a{
-        font: 11px/20px 'poppinsregular';
-    }
-    footer .footer_container .footer_pages ul li{
-        margin-bottom: 7px;
-    }
-    footer .footer_container p{
-        font: 11px/20px 'poppinsregular';
-    }
-    .footer_subscribe{
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 26px 0;
-    }
-    footer .footer_subscribe h5{
-        font: 13px/20px 'poppinsregular';
-        letter-spacing: 1px;
-        margin-bottom: 10px;
-    }
-    footer .footer_subscribe p{
-        font: 11px/20px 'poppinsregular';
-        margin-bottom: 10px;
-    }
-    .footer_social {
-        padding-top: 26px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    footer .footer_social p{
-        font: 12px/20px 'poppinsregular';
-        margin-bottom: 10px;
-    }
-    footer .footer_social a{
-        margin-left: 10px;
-    }
-}
