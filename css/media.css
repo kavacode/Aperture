@@ -170,11 +170,11 @@
             }
         }
     /*================ CLIENTS SECTION ================*/
-    @media (max-width: 616px) {
+    @media (max-width: 673px) {
         .flex_block {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
         }
 
