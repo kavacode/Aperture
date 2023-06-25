@@ -177,19 +177,7 @@ header nav ul li:last-of-type a {
     bottom: 30px;
     text-align: left;
 }
-@media (max-width: 1200px) {
-    .img_block {
-        padding: 0 5px;
-    }
-}
-@media (max-width: 1160px) {
-    .img_block {
-        justify-content: center;
-    }
-    .gallery {
-        padding: 90px 0 70px 0;
-    }
-}
+
 /*================ SUNSET (monstera&himalayas) ================*/
 
 .sunset {
@@ -223,6 +211,10 @@ header nav ul li:last-of-type a {
     font: 14px/20px 'poppinsregular';
     color: #C0C0C0;
 }
+
+
+/*================ CLIENTS SECTION ================*/
+
 .clients{
     padding: 113px 0 140px;
     background-color: black;
@@ -452,9 +444,4 @@ footer .footer_social a{
 .bottom_icons li:last-of-type:before{
     background-image: url("../images/icon4.svg");
     width: 10px;
-}
-@media (max-width: 1200px) {
-    footer {
-        padding: 88px 16px 62px;
-    }
 }
