@@ -52,7 +52,7 @@ header nav a:hover {
 }
 
 header nav ul li:first-of-type a {
-    font-size: 13px;
+    font: 13px/20px 'poppinsregular';
 }
 header nav ul li:last-of-type a {
     background: #FFFFFF;

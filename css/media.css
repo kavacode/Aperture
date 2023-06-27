@@ -40,7 +40,7 @@
         text-decoration: none;
     }
     header nav ul li:first-of-type a {
-        font-size: 11px;
+        font: 11px/20px 'poppinsregular';
     }
     header nav ul li:last-of-type a {
         font: 13px/20px 'poppinsregular';
