@@ -43,6 +43,14 @@ header nav a{
     color: #FFFFFF;
     text-decoration: none;
 }
+header nav a:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .6s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ffffff' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: 0 100%;
+    background-size: auto 3px;
+    background-repeat: repeat-x;
+    text-decoration: none;
+}
+
 header nav ul li:first-of-type a {
     font-size: 13px;
 }
@@ -53,8 +61,17 @@ header nav ul li:last-of-type a {
     /*letter-spacing: 0.4px;*/
     color: #000000;
     padding: 11px 20px;
+    transition: background-color 0.3s ease 0s;
 }
+header nav ul li:last-of-type a:hover {
+    background: black;
+    color: #ffffff;
+    box-shadow: inset 0 0 0 1px #ffffff;
 
+}
+.icon-menu {
+    display: none;
+}
 /*================ MAIN ================*/
 
 .main_screen{
@@ -249,7 +266,10 @@ header nav ul li:last-of-type a {
     display: block;
     width: 100%;
 }
-
+.owl-stage{
+    display: flex;
+    align-items: center;
+}
 /*================ HELP SCREEN ================*/
 
 .help_screen {

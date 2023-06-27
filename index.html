@@ -8,9 +8,10 @@
     <title>Aperture</title>
     <link rel="icon" type="image/x-icon" href="images/IMAGE.svg">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
-
 </head>
 <body>
 <header>
@@ -18,14 +19,19 @@
     <a href="/" title="home page">
         <img src="images/IMAGE.svg" alt="Logo image"></a>
     <nav>
-      <ul>
+        <div class="menu__body">
+      <ul class="menu__list">
         <li><a href="#">Business areas</a></li>
         <li><a href="#">Featured images</a></li>
         <li><a href="#">Gear cage</a></li>
         <li><a href="#">Contact</a></li>
         <li><a href="#">Get template</a></li>
       </ul>
+        </div>
     </nav>
+      <button class="icon-menu" type="button">
+          <span></span>
+      </button>
   </div>
 </header>
 <main>
@@ -112,7 +118,7 @@
         <div class="container">
             <h2>Past clients</h2>
             <h3>Trusted by your favourite companies</h3>
-            <div class="flex_block">
+            <div class="flex_block owl-carousel">
                 <a href="#">
                     <img src="images/client1.svg" alt="client">
                 </a>
@@ -213,5 +219,8 @@
 
     </div>
 </footer>
+<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>
