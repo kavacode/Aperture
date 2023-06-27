@@ -286,6 +286,22 @@
             }
     }
     /*================ CLIENTS SECTION ================*/
+    @media (max-width: 1099px) {
+        .clients .flex_block {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .clients .flex_block a {
+            display: inline-block;
+            margin: 0 10px;
+            max-width: 128px;
+            transform: translateX(-50%);
+            position: relative;
+            left: 50%; /*только так получилось выровнять элемент по центру*/
+        }
+    }
     @media (max-width: 673px) {
         .clients .flex_block {
             display: flex;
