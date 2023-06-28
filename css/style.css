@@ -270,6 +270,9 @@ header nav ul li:last-of-type a:hover {
     display: flex;
     align-items: center;
 }
+.owl-item{
+    text-align: center;
+}
 /*================ HELP SCREEN ================*/
 
 .help_screen {
@@ -464,4 +467,24 @@ footer .footer_social a{
 .bottom_icons li:last-of-type:before{
     background-image: url("../images/icon4.svg");
     width: 10px;
+}
+
+/*================ WIDGET UI ================*/
+
+.ui-widget.ui-widget-content{
+    width: 500px;
+    flex-direction: column;
+    background-image: url("../images/wallpapers.jpg");
+    background-size: cover;
+    height: calc(100vh - 83px);
+    box-sizing: border-box;
+}
+.ui-widget-content {
+color: #FFFFFF;
+    background: transparent;
+}
+.ui-widget-header{
+    text-align: center;
+    background: transparent;
+    color: #FFFFFF;
 }

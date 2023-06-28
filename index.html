@@ -10,10 +10,26 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://resources/demos/style.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
+<div id="dialog" title="Get template">
+        <p class="validateTips">All form fields are required.</p><br>
+        <form method="post">
+            <fieldset>
+                <label for="name">Name</label><br>
+                <input type="text" name="name" id="name"  class="text ui-widget-content ui-corner-all"><br><br>
+                <label for="email1">Email</label><br>
+                <input type="text" name="email" id="email1"  class="text ui-widget-content ui-corner-all"><br><br>
+                <label for="textarea" style="text-align: center">What kind of template</label><br>
+                <textarea rows="5" cols="30" name="text" id="textarea" class="text ui-widget-content ui-corner-all"></textarea>
+                <button>Send an application</button>
+            </fieldset>
+        </form>
+</div>
 <header>
   <div class="container">
     <a href="/" title="home page">
@@ -25,7 +41,7 @@
         <li><a href="#">Featured images</a></li>
         <li><a href="#">Gear cage</a></li>
         <li><a href="#">Contact</a></li>
-        <li><a href="#">Get template</a></li>
+        <li><a id="opener">Get template</a></li>
       </ul>
         </div>
     </nav>
@@ -221,6 +237,7 @@
 </footer>
 <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
 <script src="js/owl.carousel.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 <script src="js/scripts.js"></script>
 </body>
 </html>
